@@ -1,0 +1,38 @@
+<section class="overlay">
+  <div class="drawer">
+    <header class="d-flex justify-content-between align-items-center">
+      <aside class="d-flex justify-content-left align-items-center">
+        <button (click)="removeFromBreadCrumbs()" class="image-button">
+          <img src="../../../assets/images/chevron-left.svg" />
+        </button>
+        <h2 class="ms-4 text-capitalize">{{ drawerTitle }}</h2>
+      </aside>
+      <button class="image-button" (click)="closeDrawer()">
+        <img src="../../../assets/images/cross.svg" />
+      </button>
+    </header>
+    <section class="search text-center">
+      <input
+        type="text"
+        class="search-input"
+        id="menu-search"
+        placeholder="Search for universities, courses and more..."
+      />
+    </section>
+    <app-mobile-menu
+      (updateCurrentMenu)="updateCurrentMenu($event)"
+      [currentMenu]="currentMenu"
+    ></app-mobile-menu>
+
+    <div class="access-btns d-flex justify-content-around align-items-center">
+      <a class="btn btn-lg btn-outline-primary">Log in</a>
+      <a class="btn btn-lg btn-primary">Sign up</a>
+    </div>
+
+    <section class="ad text-center">
+      <img
+        src="https://strapi.ischoolconnect.com/uploads/IELTS_test_prep_banner_aa23b81257.svg"
+      />
+    </section>
+  </div>
+</section>

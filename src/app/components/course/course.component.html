@@ -1,0 +1,28 @@
+<section class="course">
+  <h3>{{course.name}}</h3>
+  <ul class="list-unstyled">
+    <li>
+      <img src="./../../../assets/images/university.svg" />
+      <p>{{course.school_name}}</p>
+    </li>
+    <li>
+      <img src="./../../../assets/images/degree.svg" />
+      <p>{{course.degree}}</p>
+    </li>
+    <li>
+      <img src="./../../../assets/images/money.svg" />
+      <p>{{course.tuition.value}} {{course.tuition.currency}}</p>
+    </li>
+    <li>
+      <img src="./../../../assets/images/calender.svg" />
+      <p>4 Years</p>
+    </li>
+  </ul>
+  <div class="actions d-flex">
+    <button class="btn btn-outline-light">
+      <img src="./../../../assets/images/heart.svg" />
+      Add to favourites
+    </button>
+    <button class="btn btn-primary">Apply</button>
+  </div>
+</section>

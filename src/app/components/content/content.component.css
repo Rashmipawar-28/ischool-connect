@@ -1,0 +1,8 @@
+.page-wrapper{
+    background-color: #f3f5f7;
+    padding: 1rem ;
+}
+
+.pagination::ng-deep{
+    width: fit-content;
+}

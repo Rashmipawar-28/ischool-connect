@@ -1,0 +1,24 @@
+.mobile-filter{
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-white);
+    padding:5px 0;
+    z-index: 9999;
+}
+.mobile-filter > div{
+    color: #484848;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width:50%;
+}
+.mobile-filter > div:first-child{
+    border-right:2px solid #d8d8d8;
+}
+.mobile-filter > div img{
+    height: 18px;
+    margin-right: 10px;
+}

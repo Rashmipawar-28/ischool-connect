@@ -1,0 +1,63 @@
+
+.breadcrumbs {
+    margin:1rem 0;
+}
+
+.breadcrumbs ul li{
+    margin-right: 20px;
+    position: relative;
+}
+
+.breadcrumbs ul li a{
+    text-decoration: none;
+}
+
+.breadcrumbs ul li:first-child img{
+   height: 15px;
+}
+
+.breadcrumbs ul li:not(:last-child):after{
+    position: absolute;
+    width:15px;
+    height: 15px;
+    content: ' ';
+    background: url('./../../../assets/images/chevron-right.svg') no-repeat;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+}
+
+
+.search-bar{
+    background-color: var(--color-white);    
+    border: 1px solid #dde2e7;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    width:42px;
+}
+
+.search-bar button img{
+    height: 18px;
+}
+
+.search-bar input{
+    background-color:var(--color-white);
+    border: unset;
+    font-size: 1rem;
+}
+
+
+.records-meta{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1rem 0;
+}
+
+.records-meta p{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333;
+    margin: 0;
+}

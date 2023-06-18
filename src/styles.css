@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+html,
+* {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.image-button img {
+    max-height: 36px;
+}
+
+:root {
+    --bs-primary-rgb: 0, 175, 240 !important;
+    --bs-light-rgb: 173, 181, 189 !important;
+    --color-white: #fff;
+    --color-dark: #484848;
+
+    --bs-btn-border-color: rgba(0, 0, 0, 0.12);
+    --bs-btn-color: rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgb(var(--bs-primary-rgb)) !important;
+    border-color: rgb(var(--bs-primary-rgb)) !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    color: rgb(var(--bs-primary-rgb)) !important;
+    border-color: rgb(var(--bs-primary-rgb)) !important;
+}
+
+.btn-outline-light {
+    color: #706f6f;
+    border: 1px solid rgba(0, 0, 0, .12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+
+    font-weight: 600;
+    line-height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.btn-outline-light img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid #283353;
+    background: #161c2d;
+    box-shadow: 0 -1px #283353;
+}
+.footer-bottom a {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #adb5bd;
+}
+
+.footer-bottom .privacy-box {
+    display: block !important;
+}
+
+@media only screen and (min-width:992px) {
+    .footer-bottom p {
+        font-size: 16px;
+    }
+    .footer-bottom a {
+        font-size: 16px;
+    }
+    .footer-bottom .privacy-box {
+        display: flex !important;
+    }
+
+    .action img {
+        width: 15px;
+    }
+
+    .filters .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filters .header h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333;
+        padding: 0 1rem;
+    }
+    .list .item input[type="checkbox"] {
+        display: inline-block;
+        height: 16px;
+        line-height: 0;
+        margin: auto;
+        margin-right: 8px;
+        order: 0;
+        position: relative;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 16px;
+        flex-shrink: 0;
+    }
+    .list .item label{
+        line-height: 15px!important;
+    }
+    .list .item {
+        margin: 8px 0;
+    }
+    .filters{
+        padding: 15px 0 0;
+    }
+    .institute-listing{
+        padding-left: 2rem;
+    }
+    .list {
+        max-height: 10.5rem;
+        overflow-y: auto;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background-color: #cfcfcf;
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+    }
+    .nav-link img{
+        width: 15px;
+    }
+}

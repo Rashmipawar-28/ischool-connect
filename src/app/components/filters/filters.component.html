@@ -1,0 +1,19 @@
+<aside class="filters">
+  <div class="header" (click)="showFilter()">
+    <span class="title-plus-icon">
+      <h4 class="title">{{filter.title}}</h4><!---->
+    </span>
+    <div class="action">
+      <img *ngIf="showFilterdiv" src="../../../assets/images/chevron-down.svg"/>
+      <img *ngIf="!showFilterdiv" src="../../../assets/images/chevron-right-light.svg"/>
+    </div>
+  </div>
+  <div class="list" *ngIf="showFilterdiv">
+    <div class="item" *ngFor="let item of filter.children">
+      <input type="checkbox" [name]="filter.title" [value]="item">
+      <label for="country"> {{item}} </label><br>
+    </div>
+    
+  </div>
+  <hr>
+</aside>

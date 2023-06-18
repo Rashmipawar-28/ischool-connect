@@ -1,0 +1,12 @@
+header {
+    height: 74px;
+    box-shadow:0 0 3px #3c485826!important
+}
+
+.menu-toggle img {
+    height: 36px;
+}
+
+.search-btn img {
+    height: 30px;
+}

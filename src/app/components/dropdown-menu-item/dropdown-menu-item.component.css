@@ -1,0 +1,22 @@
+.dropdown-menu-item-title img{
+    height: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin:0.5rem 0;
+}
+
+.dd-first-child{
+    margin:0.5rem 0 !important;
+    font-size: 16px;
+    color: #183665;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.dd-last-child{
+    line-height:24px;
+    color: #7a7a7a;
+    text-decoration: none;
+}

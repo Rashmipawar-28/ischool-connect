@@ -1,0 +1,101 @@
+footer{
+    background: linear-gradient(180deg,#0a2044 0%,#273752 100%);
+    background-image: linear-gradient(rgb(10, 32, 68) 0%, rgb(39, 55, 82) 100%);
+    padding: 60px 20px 10px;
+    position: relative;
+    color: #adb5bd;
+} 
+
+footer p{
+    margin: 5px 0;
+}
+
+footer a{
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.contact-detail .icon-box img{
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-detail p, .contact-detail a{
+    color:#8492a6!important
+}
+.contact-detail .title{
+    color:var(--color-white);
+}
+
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contact-detail-body{
+    margin-left:35px;
+}
+
+.social-icons li {
+    width:30px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid thin #adb5bd;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.social-icons li img{
+    width:18px;
+}
+
+.links-head{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.footer-list li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-list li a{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.footer-list li img{
+ width:10px;
+ margin-right: 10px;
+}
+
+.subscribe-form .input-group img{
+    height: 15px;
+    margin: 0 5px;
+}
+
+.subscribe-form .input-group{
+    display: flex;
+    background-color: var(--color-white);
+    justify-content: left;
+    align-items: center;
+}
+
+.subscribe-form .input-group input{
+    border-left:none;
+}
+
+
+.subscribe-form .input-group {
+    border-radius:3px;
+}
+
+

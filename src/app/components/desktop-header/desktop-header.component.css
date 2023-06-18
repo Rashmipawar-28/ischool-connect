@@ -1,0 +1,112 @@
+.navbar.sticky-top  .buy-button {
+    float: left!important;
+    margin-left: 0.5rem!important;
+}
+#navbarScroll a{
+    display: block;
+    color: #3c4858;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all .5s;
+    font-family: Montserrat;
+}
+#navbarScroll > ul > li {
+    padding: 15px 10px;
+}
+.nav-item a:hover,.menu_info section a:hover{
+    color: rgb(0, 175, 240)!important ;
+}
+.has-submenu:hover .study_abroad_menu_list{
+    display: block;
+    transition: all .5s ease;
+}
+.study_abroad_menu_list{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all .5s ease;
+}
+li.nav-item.has-submenu{
+    position: relative;
+}
+.study_abroad_menu_container{
+    display: grid;
+    grid-template-columns: 260px auto;
+}
+.study_abroad_menu_list{
+    padding: 0;
+}
+.study_abroad_menu_list{
+    position: fixed;
+    width: 100vw;
+    left: 0px;
+    top: 72px;
+    z-index: 1;
+
+}
+.study_abroad_menu_container .side_bar ul {
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+.study_abroad_menu_container .side_bar .nav_image_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.study_abroad_menu_container .w-1-5rem {
+    width: 1.5rem!important;
+}
+.study_abroad_menu_container .menu_info {
+    padding: 1.5rem 3.5rem;
+}
+.study_abroad_menu_container .menu_info main{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+.study_abroad_menu_container .menu_info main h4 {
+    color: #8189a9;
+    font-size: 16px;
+    font-weight: 600;
+}
+.study_abroad_menu_container .menu_info main .sub_menu_section .sub_menu_section__list {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.study_abroad_menu_container .menu_info main .other_sub_menu_section .other_sub_menu_section__list a {
+    color: #183665;
+    font-size: 12px!important;
+    font-weight: 500!important;
+    text-decoration: none!important;
+}
+.study_abroad_menu_container .side_bar .active {
+    color: #00aff0;
+}
+.study_abroad_menu_container .side_bar ul li {
+    cursor: pointer;
+}
+.study_abroad_menu_container .side_bar .nav_image_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.study_abroad_menu_container .w-1-5rem {
+    width: 1.5rem!important;
+}
+.study_abroad_menu_container .side_bar .footer_carousal img {
+    width: 100%;
+}
+.study_abroad_menu_container .side_bar {
+    color: #183665;
+    padding: 1.75rem 3rem 2.5rem;
+    background-color: rgb(247,251,253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

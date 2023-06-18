@@ -1,0 +1,39 @@
+<h4 class="text-uppercase mt-2 dropdown-menu-item-title" (click)="toggleShow()">
+  {{ menuItem?.title }}
+  <img
+    *ngIf="show; else collapsed"
+    src="../../../assets/images/chevron-up.svg"
+  />
+  <ng-template #collapsed>
+    <img src="../../../assets/images/chevron-down.svg" />
+  </ng-template>
+</h4>
+
+<ul *ngIf="show" class="list-unstyled">
+  <li *ngFor="let childMenuItem of menuItem?.children">
+    <a
+      [ngClass]="
+        childMenuItem?.children?.length > 0
+          ? 'dd-first-child'
+          : 'dd-last-child text-capitalize'
+      "
+      *ngIf="childMenuItem?.link"
+      href="{{ childMenuItem?.link }}"
+      >{{ childMenuItem?.title }}
+    </a>
+    <ul class="list-unstyled">
+      <li *ngFor="let lastChild of childMenuItem?.children">
+        <a
+          class="dd-last-child text-capitalized"
+          *ngIf="lastChild?.link"
+          href="{{ lastChild?.link }}"
+          >{{ lastChild?.title }}
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p *ngIf="!menuItem?.link && menuItem?.children?.length === 0">
+  No menu items here. Please check menu.js config.
+</p>

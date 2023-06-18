@@ -1,0 +1,30 @@
+<nav>
+  <ul class="list-unstyled">
+    <li
+      *ngFor="let menuItem of currentMenu"
+      [ngClass]="{ 'border-0': menuItem.type === 'dropdown' }"
+    >
+      <ng-template [ngIf]="menuItem.type !== 'dropdown'">
+        <a *ngIf="menuItem?.link" href="{{ menuItem?.link }}"
+          >{{ menuItem?.title }}
+        </a>
+        <a
+          *ngIf="menuItem?.children"
+          href="javascript:void(0)"
+          (click)="changeCurrentMenu(menuItem)"
+        >
+          {{ menuItem?.title }}
+          <img src="./../../../assets/images/chevron-right.svg" />
+        </a>
+        <p *ngIf="!menuItem?.link && menuItem?.children?.length === 0">
+          No menu items here. Please check menu.js config.
+        </p>
+      </ng-template>
+
+      <app-dropdown-menu-item
+        *ngIf="menuItem.type === 'dropdown'"
+        [menuItem]="menuItem"
+      ></app-dropdown-menu-item>
+    </li>
+  </ul>
+</nav>
